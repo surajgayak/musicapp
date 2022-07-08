@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mymusic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="main">
+            <h1 id="title">MANGOMAYA</h1>
+            <h3 id="artist">Suraj Gayak</h3>
+            <div id="images">
+                <img src="mangomaya.jpg">
+            </div>
+
+            <audio src="images/mangomaya.mp3" controls></audio>
+
+            <!-- progress bar -->
+            <div class="progress" id="progress">
+                <div class="duration">
+                    <div id="current-time">0:00</div>
+                    <div id="total-time">2:30</div>
+                </div>
+                <div class="progressbar">
+                    <div class="progressess"></div>
+                </div>
+            </div>
+            <div id="icons">
+                <i class="fa fa-backward" aria-hidden="true" id="backward"
+                    onclick="prev()"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <i class="fa fa-play" aria-hidden="true"
+                    id="play"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <i class="fa fa-forward" aria-hidden="true" id="forward" onclick="forward()"></i>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="music.js"></script>
+</body>
+
+</html>
